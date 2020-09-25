@@ -1,0 +1,14 @@
+{
+
+"District":
+[
+["Select District"],
+["Jalgaon","Pune","Mumbai"],
+["panji","goa"],
+["Ahemadabad","Gandhinagar"],
+["Bhopal","Indore"]
+
+],
+
+"State_nm":["Maharashtra","Goa","Gujrat","Madhya Pradesh"]
+}

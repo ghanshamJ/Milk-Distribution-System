@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{93EF2710-4BA5-4628-9218-8B927198FA8A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Online_Milk_Management</RootNamespace>
+    <AssemblyName>Online_Milk_Management</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CompleteInfo_Customer.aspx" />
+    <Content Include="CompleteInfo_Provider.aspx" />
+    <Content Include="ContactUs.aspx" />
+    <Content Include="CustomerHome.aspx" />
+    <Content Include="CustomerLogin.aspx" />
+    <Content Include="CustomerSignup.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="FindDairy.aspx" />
+    <Content Include="Generate_Bill.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Home.aspx" />
+    <Content Include="Milk_Order.aspx" />
+    <Content Include="Milk_Transaction_Customer.aspx" />
+    <Content Include="MyCustomers.aspx" />
+    <Content Include="MyProvider.aspx" />
+    <Content Include="Orders.aspx" />
+    <Content Include="PaymentFailure.aspx" />
+    <Content Include="PaymentGateway.aspx" />
+    <Content Include="PaymentSuccess.aspx" />
+    <Content Include="Payment_Details.aspx" />
+    <Content Include="ProviderDetails.aspx" />
+    <Content Include="ProviderHome.aspx" />
+    <Content Include="ProviderLogin.aspx" />
+    <Content Include="ProviderSignup.aspx" />
+    <Content Include="Provider_PaymentDetails.aspx" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="To_Do_List.html" />
+    <Content Include="Transactions_Provider.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CompleteInfo_Customer.aspx.cs">
+      <DependentUpon>CompleteInfo_Customer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompleteInfo_Customer.aspx.designer.cs">
+      <DependentUpon>CompleteInfo_Customer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompleteInfo_Provider.aspx.cs">
+      <DependentUpon>CompleteInfo_Provider.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompleteInfo_Provider.aspx.designer.cs">
+      <DependentUpon>CompleteInfo_Provider.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConDb.cs" />
+    <Compile Include="ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.Master.cs">
+      <DependentUpon>Customer.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer.Master.designer.cs">
+      <DependentUpon>Customer.Master</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerHome.aspx.cs">
+      <DependentUpon>CustomerHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerHome.aspx.designer.cs">
+      <DependentUpon>CustomerHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerLogin.aspx.cs">
+      <DependentUpon>CustomerLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerLogin.aspx.designer.cs">
+      <DependentUpon>CustomerLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerSignup.aspx.cs">
+      <DependentUpon>CustomerSignup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerSignup.aspx.designer.cs">
+      <DependentUpon>CustomerSignup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FindDairy.aspx.cs">
+      <DependentUpon>FindDairy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FindDairy.aspx.designer.cs">
+      <DependentUpon>FindDairy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Generate_Bill.aspx.cs">
+      <DependentUpon>Generate_Bill.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Generate_Bill.aspx.designer.cs">
+      <DependentUpon>Generate_Bill.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Global.Master.cs">
+      <DependentUpon>Global.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.Master.designer.cs">
+      <DependentUpon>Global.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Milk_Order.aspx.cs">
+      <DependentUpon>Milk_Order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Milk_Order.aspx.designer.cs">
+      <DependentUpon>Milk_Order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Milk_Transaction_Customer.aspx.cs">
+      <DependentUpon>Milk_Transaction_Customer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Milk_Transaction_Customer.aspx.designer.cs">
+      <DependentUpon>Milk_Transaction_Customer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyCustomers.aspx.cs">
+      <DependentUpon>MyCustomers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyCustomers.aspx.designer.cs">
+      <DependentUpon>MyCustomers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyProvider.aspx.cs">
+      <DependentUpon>MyProvider.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyProvider.aspx.designer.cs">
+      <DependentUpon>MyProvider.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Orders.aspx.cs">
+      <DependentUpon>Orders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Orders.aspx.designer.cs">
+      <DependentUpon>Orders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentFailure.aspx.cs">
+      <DependentUpon>PaymentFailure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaymentFailure.aspx.designer.cs">
+      <DependentUpon>PaymentFailure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentGateway.aspx.cs">
+      <DependentUpon>PaymentGateway.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaymentGateway.aspx.designer.cs">
+      <DependentUpon>PaymentGateway.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentSuccess.aspx.cs">
+      <DependentUpon>PaymentSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaymentSuccess.aspx.designer.cs">
+      <DependentUpon>PaymentSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment_Details.aspx.cs">
+      <DependentUpon>Payment_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment_Details.aspx.designer.cs">
+      <DependentUpon>Payment_Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Provider.Master.cs">
+      <DependentUpon>Provider.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Provider.Master.designer.cs">
+      <DependentUpon>Provider.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ProviderDetails.aspx.cs">
+      <DependentUpon>ProviderDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProviderDetails.aspx.designer.cs">
+      <DependentUpon>ProviderDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProviderHome.aspx.cs">
+      <DependentUpon>ProviderHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProviderHome.aspx.designer.cs">
+      <DependentUpon>ProviderHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProviderLogin.aspx.cs">
+      <DependentUpon>ProviderLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProviderLogin.aspx.designer.cs">
+      <DependentUpon>ProviderLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProviderSignup.aspx.cs">
+      <DependentUpon>ProviderSignup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProviderSignup.aspx.designer.cs">
+      <DependentUpon>ProviderSignup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Provider_PaymentDetails.aspx.cs">
+      <DependentUpon>Provider_PaymentDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Provider_PaymentDetails.aspx.designer.cs">
+      <DependentUpon>Provider_PaymentDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transactions_Provider.aspx.cs">
+      <DependentUpon>Transactions_Provider.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transactions_Provider.aspx.designer.cs">
+      <DependentUpon>Transactions_Provider.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="js\" />
+    <Folder Include="TOdo\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Customer.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Provider.Master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>33280</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
