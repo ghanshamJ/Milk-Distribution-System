@@ -1,0 +1,5 @@
+E:\AWT 813\Online_Milk_Management\Online_Milk_Management\bin\Online_Milk_Management.dll
+E:\AWT 813\Online_Milk_Management\Online_Milk_Management\bin\Online_Milk_Management.pdb
+E:\AWT 813\Online_Milk_Management\Online_Milk_Management\obj\Debug\Online_Milk_Management.dll
+E:\AWT 813\Online_Milk_Management\Online_Milk_Management\obj\Debug\Online_Milk_Management.pdb
+E:\AWT 813\Online_Milk_Management\Online_Milk_Management\obj\Debug\Online_Milk_Management.csprojResolveAssemblyReference.cache
